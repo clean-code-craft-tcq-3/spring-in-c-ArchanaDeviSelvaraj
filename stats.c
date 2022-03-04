@@ -1,4 +1,4 @@
-//#include "stats.h"
+#include "stats.h"
 struct Stats
   {
   float average,min,max;
