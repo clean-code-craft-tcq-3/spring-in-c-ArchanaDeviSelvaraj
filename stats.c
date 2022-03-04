@@ -50,10 +50,27 @@ int check_and_alert(float maxThreshold , struct Stats computedStats)
     emailAlertCallCount++;
     ledAlertCallCount++;
     return emailAlertCallCount;
-    return ledAlertCallCount;
+   
   }
 	return 0;
 }
+
+int check_and_alert_1(float maxThreshold , struct Stats computedStats)
+{
+	
+	int emailAlertCallCount = 0;
+	int ledAlertCallCount = 0;
+
+  if(computedStats.max>maxThreshold)
+  {
+    emailAlertCallCount++;
+    ledAlertCallCount++;
+    return ledAlertCallCount;
+   
+  }
+	return 0;
+}
+
 
 
 
