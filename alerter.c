@@ -9,5 +9,6 @@ void check_and_alert(float maxThreshold, alerters, computedStats)
   {
     emailAlertCallCount++;
     ledAlertCallCount++;
+    return alerters;
   }
 }
