@@ -35,6 +35,20 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
 	return s;	
 
 }
+struct Stats compute_statistics_empty(const float* numberset) {
+    struct Stats s;
+    s.average = 0;
+    s.min = 0;
+    s.max = 0;
+    	if (numberset == [])
+	{
+	s.average = null;
+    	s.min = null;
+    	s.max = null;	
+	
+	return s;	
+
+}
 
 int check_and_alert(float maxThreshold , struct Stats computedStats)
 {
