@@ -39,7 +39,7 @@ TEST_CASE("raises alerts when max is greater than threshold") {
     
     typedef int (*alerter_funcptr)();
 
-    alerter_funcptr alerters[] = {emailAlertCallCount, ledAlertCallCount};
+    alerter_funcptr alerters[] = {emailAlerter, ledAlerter};
 
     const float maxThreshold = 10.2;
     check_and_alert(maxThreshold, alerters, computedStats);
