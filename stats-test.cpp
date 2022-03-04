@@ -36,6 +36,8 @@ TEST_CASE("raises alerts when max is greater than threshold") {
     float numberset[] = {99.8, 34.2, 4.5};
     int setlength = sizeof(numberset) / sizeof(numberset[0]);
     Stats computedStats = compute_statistics(numberset, setlength);
+    
+    typedef void (*alerter_funcptr)();
 
     alerter_funcptr alerters[] = {emailAlerter, ledAlerter};
 
