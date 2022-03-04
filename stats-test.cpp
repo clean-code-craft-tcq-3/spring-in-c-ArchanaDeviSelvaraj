@@ -46,11 +46,13 @@ TEST_CASE("raises alerts when max is greater than threshold") {
     extern int emailAlertCallCount;
 	extern int ledAlertCallCount;
     
-    alerters[]=check_and_alert(maxThreshold, computedStats);
-   
+   check_and_alert(maxThreshold, computedStats);
+  	emailAlerter == emailAlertCallCount;
+	ledAlerter == ledAlertCallCount;
+	
     // need a way to check if both emailAlerter, ledAlerter were called
     // you can define call-counters along with the functions, as shown below
-    REQUIRE(emailAlertCallCount == 1);
-    REQUIRE(ledAlertCallCount == 1);
+    REQUIRE(emailAlerter == 1);
+    REQUIRE(ledAlerter == 1);
 }
 
