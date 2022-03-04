@@ -48,8 +48,8 @@ TEST_CASE("raises alerts when max is greater than threshold") {
 	extern int ledAlertCallCount;
     
    check_and_alert(maxThreshold, computedStats);
-  	emailAlerter == emailAlertCallCount;
-	ledAlerter == ledAlertCallCount;
+  	emailAlerter = emailAlertCallCount;
+	ledAlerter = ledAlertCallCount;
 	
     // need a way to check if both emailAlerter, ledAlerter were called
     // you can define call-counters along with the functions, as shown below
