@@ -37,6 +37,8 @@ TEST_CASE("raises alerts when max is greater than threshold") {
     int setlength = sizeof(numberset) / sizeof(numberset[0]);
     Stats computedStats = compute_statistics(numberset, setlength);
 
+    alerter_funcptr alerters[] = {emailAlerter, ledAlerter};
+
     const float maxThreshold = 10.2;
     check_and_alert(maxThreshold, alerters, computedStats);
    
