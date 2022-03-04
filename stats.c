@@ -52,6 +52,7 @@ int check_and_alert(float maxThreshold , struct Stats computedStats)
     return emailAlertCallCount;
     return ledAlertCallCount;
   }
+	return 0;
 }
 
 
