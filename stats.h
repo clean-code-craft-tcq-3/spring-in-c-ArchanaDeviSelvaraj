@@ -5,7 +5,7 @@ struct Stats
   float average,min,max;
 };
 struct Stats compute_statistics(const float* , int );
-struct Stats compute_statistics_empty(const float* )
+struct Stats compute_statistics_empty(const float* );
 typedef int (*alerter_funcptr)(int,int);
 
 //int check_and_alert(float maxThreshold, struct Stats computedStats);
