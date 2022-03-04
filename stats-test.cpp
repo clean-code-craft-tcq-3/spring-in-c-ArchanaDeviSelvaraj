@@ -37,10 +37,11 @@ TEST_CASE("raises alerts when max is greater than threshold") {
     int setlength = sizeof(numberset) / sizeof(numberset[0]);
     Stats computedStats = compute_statistics(numberset, setlength);
     
-    typedef void (*alerter_funcptr)();
+    //typedef void (*alerter_funcptr)();
 
-    alerter_funcptr alerters[] = {emailAlerter, ledAlerter};
-
+    //alerter_funcptr alerters[] = {emailAlerter, ledAlerter};
+	int emailAlerter = 0;
+	int ledAlerter = 0;	
     const float maxThreshold = 10.2;
     
     extern int emailAlertCallCount;
