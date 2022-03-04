@@ -30,7 +30,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
 		}
 		num_set++;			
 	}
-	avg = sum/setlength;
+	average = sum/setlength;
 	s.avg = avg;
 	s.min = min;
 	s.max = max;
