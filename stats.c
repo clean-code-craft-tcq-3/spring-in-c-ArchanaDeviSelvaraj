@@ -40,7 +40,7 @@ struct Stats compute_statistics_empty(const float* numberset) {
     s.average = 0;
     s.min = 0;
     s.max = 0;
-    	if (sizeof(numberset == 0)
+    	if (sizeof(numberset == 0))
 	{
 	s.average = NAN;
     	s.min = NAN;
