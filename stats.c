@@ -45,7 +45,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
 extern int emailAlertCallCount;
 extern int ledAlertCallCount;
 
-int check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stats computedStats)
+int check_and_alert(float maxThreshold , struct Stats computedStats)
 {
   if(computedStats.max>maxThreshold)
   {
