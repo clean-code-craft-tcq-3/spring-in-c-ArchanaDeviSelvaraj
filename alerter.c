@@ -10,6 +10,7 @@ int check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stats
   {
     emailAlertCallCount++;
     ledAlertCallCount++;
-    return alerters;
+    return emailAlertCallCount;
+    return ledAlertCallCount;
   }
 }
