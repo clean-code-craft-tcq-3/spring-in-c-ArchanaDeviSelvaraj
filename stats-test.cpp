@@ -23,9 +23,9 @@ TEST_CASE("average is NaN for empty array") {
 	float numberset[] = {};
 	//int setlength = sizeof(numberset) / sizeof(numberset[0]);
         Stats computedStats = compute_statistics_empty(numberset);
-	REQUIRE(abs(computedStats.average);
-    	REQUIRE(abs(computedStats.max);
-    	REQUIRE(abs(computedStats.min);
+	REQUIRE(computedStats.average);
+    	REQUIRE(computedStats.max);
+    	REQUIRE(computedStats.min);
     //All fields of computedStats (average, max, min) must be
     //NAN (not-a-number), as defined in math.h
     
