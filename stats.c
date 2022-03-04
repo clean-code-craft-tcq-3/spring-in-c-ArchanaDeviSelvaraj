@@ -45,7 +45,7 @@ struct Stats compute_statistics_empty(const float* numberset) {
 	s.average = null;
     	s.min = null;
     	s.max = null;	
-	
+	}
 	return s;	
 
 }
