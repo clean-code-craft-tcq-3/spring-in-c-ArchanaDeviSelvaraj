@@ -11,7 +11,7 @@
 
 TEST_CASE("reports average, minimum and maximum") {
     float numberset[] = {1.5, 8.9, 3.2, 4.5};
-    int setlength = sizeof(numberset) / sizeof(numberset[0]);//setlength=4
+    int setlength = sizeof(numberset) / sizeof(numberset[0]);
     struct Stats computedStats = compute_statistics(numberset, setlength);
     float epsilon = 0.001;
     REQUIRE(abs(computedStats.average - 4.525) < epsilon);
@@ -20,7 +20,12 @@ TEST_CASE("reports average, minimum and maximum") {
 }
 
 TEST_CASE("average is NaN for empty array") {
-    //Stats computedStats = compute_statistics(0, 0);
+	float numberset[] = {};
+	//int setlength = sizeof(numberset) / sizeof(numberset[0]);
+        Stats computedStats = compute_statistics_empty(numberset);
+	REQUIRE(abs(computedStats.average);
+    	REQUIRE(abs(computedStats.max);
+    	REQUIRE(abs(computedStats.min);
     //All fields of computedStats (average, max, min) must be
     //NAN (not-a-number), as defined in math.h
     
