@@ -20,7 +20,7 @@ TEST_CASE("reports average, minimum and maximum") {
 }
 
 TEST_CASE("average is NaN for empty array") {
-	float numberset[] = {};
+	float numberset[] = {NULL};
 	//int setlength = sizeof(numberset) / sizeof(numberset[0]);
         Stats computedStats = compute_statistics_empty(numberset);
 	REQUIRE(computedStats.average);
