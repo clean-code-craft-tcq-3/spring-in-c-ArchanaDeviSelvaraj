@@ -44,8 +44,8 @@ TEST_CASE("raises alerts when max is greater than threshold") {
 	int ledAlerter = 0;	
     const float maxThreshold = 10.2;
     
-    extern int emailAlertCallCount;
-	extern int ledAlertCallCount;
+    //extern int emailAlertCallCount;
+	//extern int ledAlertCallCount;
     
    	emailAlerter=check_and_alert(maxThreshold, computedStats);
 	 ledAlerter=check_and_alert_1(maxThreshold, computedStats);
